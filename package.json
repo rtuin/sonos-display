@@ -1,6 +1,6 @@
 {
-  "name": "toys",
-  "version": "0.0.0",
+  "name": "sonos-display",
+  "version": "0.0.1",
   "dependencies": {
     "express": "^4.10.2",
     "socket.io": "^1.3.5",
@@ -41,5 +41,18 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "description": "This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular) version 0.11.1.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "sonos",
+    "tv",
+    "display",
+    "entertainment"
+  ],
+  "author": "Richard Tuin",
+  "license": "MIT"
 }

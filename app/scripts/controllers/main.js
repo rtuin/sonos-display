@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name toysApp.controller:MainCtrl
+ * @name sonosDisplayApp.controller:MainCtrl
  * @description
- * # MainCtrl
- * Controller of the toysApp
+ * # sonosDisplayCtrl
+ * Controller of the sonosDisplayApp
  */
-angular.module('toysApp')
+angular.module('sonosDisplayApp')
   .factory('sonosSocket', function (socketFactory, $window) {
     var ioSocket = io.connect($window.location.hostname + ':3000');
     return socketFactory({ioSocket: ioSocket});

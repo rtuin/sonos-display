@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name toysApp
+ * @name sonosDisplayApp
  * @description
- * # toysApp
+ * # sonosDisplayApp
  *
  * Main module of the application.
  */
 angular
-  .module('toysApp', [
+  .module('sonosDisplayApp', [
     'ngAnimate',
     'ngCookies',
     'ngMessages',
