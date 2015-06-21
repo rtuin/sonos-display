@@ -1,12 +1,55 @@
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 body {
-  background: #000 url("../images/sonos-logo-white.png") 500px 20px no-repeat ;
-  background-size: 15%;
+  background: #000;
+//  background: #000 url("../images/sonos-logo-white.png") 500px 20px no-repeat ;
   background-position-y: 5%;
   background-position-x: 50%;
   color: #fff;
   text-align: center;
   font-family: 'Bitter', serif;
+}
+img.sonoslogo {
+  height: 75px;
+  margin-top: 2%;
+}
+div.fullbg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: none;
+  transition: background-image 1s ease-in-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1000;
+  opacity: 0.2;
+
+  animation-duration: 15s;
+  animation-name: bganim;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bganim {
+  from {
+    background-size: 90%;
+  }
+
+  to {
+    background-size: 120%;
+  }
+}
+
+div.albumartwork {
+  margin: 2% auto 0 auto;
+  height: 275px;
+  width: 275px;
+  background-image: none;
+  transition: background-image 1s ease-in-out;
+  background-size: 100%;
 }
 img.albumartwork {
   margin-top: 7.5%;
@@ -19,4 +62,18 @@ h1 {
 }
 h2 {
   font-size: 2em;
+}
+
+.progresscontainer {
+  background-color: #666;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  .progress {
+    height: 5px;
+    background-color: #f00;
+    width: 0px;
+  }
+
 }

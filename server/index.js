@@ -5,7 +5,9 @@ var app = require('express')(),
     sonos = new Sonos(process.env.SONOS_HOST || '192.168.2.19', process.env.SONOS_PORT || 1400);
 
 io.on('connection', function(socket) {
-  console.log('a user connected');
+  if (io.sockets.sockets.length == 1) {
+    checkSonos();
+  }
 });
 
 http.listen(3000, function() {
@@ -15,7 +17,8 @@ http.listen(3000, function() {
 var checkSonos = function() {
   sonos.currentTrack(function (err, track) {
       io.emit('trackupdate', track);
-    setTimeout(checkSonos, 1000);
+      if (io.sockets.sockets.length > 0) {
+        setTimeout(checkSonos, 700);
+      }
   });
 };
-checkSonos();

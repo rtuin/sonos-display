@@ -16,5 +16,6 @@ angular.module('toysApp')
     $scope.track = {};
     sonosSocket.on('trackupdate', function(track) {
       $scope.track = track;
+      $scope.track.progress = (100 / track.duration) * track.position;
     });
   });
