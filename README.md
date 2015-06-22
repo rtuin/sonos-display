@@ -15,7 +15,7 @@ $ npm build
 
 Then locate your Sonos' IP-address (auto discovery feature is on the wishlist), and start the server using:
 ```
-$ SONOS_HOST=[sonos-ip-address] node index.js
+$ SONOS_HOST=[sonos-ip-address] node server/index.js
 ```
 
 Go to http://your-ip:8000/ to view.
