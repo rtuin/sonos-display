@@ -44,7 +44,7 @@
     "build": "grunt build",
     "serve": "node server/index.js"
   },
-  "description": "Display your Sonos' currently playing info on your TV.",
+  "description": "Display your Sonos' currently playing info on your TV, or any other device with a web browser.",
   "main": "Gruntfile.js",
   "directories": {
     "test": "test"

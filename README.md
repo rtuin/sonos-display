@@ -28,4 +28,10 @@ Running `grunt test` will run the unit tests with karma.
 
 ## Credits
 
+- [Richard Tuin](https://github.com/rtuin)
+
 This project was generated using the [Yeoman Angular generator](https://github.com/yeoman/generator-angular) v0.11.1.
+
+## License
+
+The MIT License (MIT). Please see the [license file](LICENSE) for more information.
