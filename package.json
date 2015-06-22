@@ -1,6 +1,6 @@
 {
   "name": "sonos-display",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "express": "^4.10.2",
     "socket.io": "^1.3.5",
@@ -40,9 +40,11 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt build",
+    "serve": "node server/index.js"
   },
-  "description": "This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular) version 0.11.1.",
+  "description": "Display your Sonos' currently playing info on your TV.",
   "main": "Gruntfile.js",
   "directories": {
     "test": "test"

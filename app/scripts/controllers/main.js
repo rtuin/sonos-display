@@ -9,7 +9,7 @@
  */
 angular.module('sonosDisplayApp')
   .factory('sonosSocket', function (socketFactory, $window) {
-    var ioSocket = io.connect($window.location.hostname + ':3000');
+    var ioSocket = io.connect();
     return socketFactory({ioSocket: ioSocket});
   })
   .controller('MainCtrl', function ($scope, sonosSocket) {

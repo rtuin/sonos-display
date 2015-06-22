@@ -1,4 +1,5 @@
-var app = require('express')(),
+var express = require('express');
+var app = express(),
     http = require('http').Server(app),
     io = require('socket.io')(http),
     Sonos = require('sonos').Sonos,
@@ -10,8 +11,10 @@ io.on('connection', function(socket) {
   }
 });
 
-http.listen(3000, function() {
-  console.log('listening on *:3000');
+app.use(express.static(__dirname + '/../dist'));
+
+var server = http.listen(process.env.SONOS_DISPLAY_PORT || 8000, function() {
+  console.log('listening on ' + server.address().address + ':' + server.address().port);
 });
 
 var checkSonos = function() {
