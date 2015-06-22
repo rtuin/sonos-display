@@ -7,7 +7,7 @@ Display your Sonos' currently playing info on your TV, or any other device with 
 * A Sonos speaker
 
 ## Installation
-* Run the following commands:
+Run the following commands:
 ```
 $ npm install
 $ npm build
@@ -17,6 +17,8 @@ Then locate your Sonos' IP-address (auto discovery feature is on the wishlist), 
 ```
 $ SONOS_HOST=[sonos-ip-address] node index.js
 ```
+
+Go to http://your-ip:8000/ to view.
 
 ## Build & development
 
